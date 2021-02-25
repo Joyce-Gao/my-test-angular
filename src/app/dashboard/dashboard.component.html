@@ -1,0 +1,8 @@
+<h3 class="caption">Top Heroes</h3>
+<ul class="grid grid-pad">
+  <li *ngFor="let hero of heroes; let i = index;" (click)="handleClick(hero.id)">
+    <div class="module hero">
+     {{hero.name}}
+    </div>
+  </li>
+</ul>

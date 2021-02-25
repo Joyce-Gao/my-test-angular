@@ -1,0 +1,25 @@
+h1 {
+    margin: 0 20px;
+    color: #5f7d8c;
+}
+ul{
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+    
+    li {
+        border: 1px solid #5f7d8c;
+        margin: 10px 0;
+        width: 100%;
+        .num {
+            background-color: #5f7d8c;
+            min-width: 40px;
+            text-align: center;
+            display: inline-block;
+            margin-right: 10px;
+            color: white;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+}

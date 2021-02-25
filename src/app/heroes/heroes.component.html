@@ -1,0 +1,8 @@
+<h1>
+  My Heroes
+</h1>
+<ul>
+  <li *ngFor="let item of heroes" (click)="handleClick(item.id)">
+      <span class="num">{{item.id}}</span><span>{{item.name}}</span>
+  </li>
+</ul>

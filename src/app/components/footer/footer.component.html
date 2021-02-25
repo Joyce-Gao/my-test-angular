@@ -1,0 +1,6 @@
+<ul class="footer">
+  <li *ngFor="let item of footerList; let i = index" (click)= "handleClick(i)">
+    <a [routerLink]="item.link" [ngClass]="{active: i === active}">{{ item.label }}</a>
+  </li>
+</ul>
+

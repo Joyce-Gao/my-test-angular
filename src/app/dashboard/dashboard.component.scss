@@ -1,0 +1,25 @@
+.caption {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    color: #5f7d8c;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(4, 80px);
+   height: 80px;
+   line-height: 5;
+   padding: 0;
+   grid-column-gap: 10px;
+   margin: 0 10px;
+   overflow-x: auto;
+   li {
+       list-style-type: none;
+       font-size: 14px;      
+       text-align: center;
+       background-color: #5f7d8c;
+       color: white;
+       font-weight: 500;
+   }
+}

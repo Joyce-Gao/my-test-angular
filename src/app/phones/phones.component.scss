@@ -1,0 +1,41 @@
+h2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    color: #5f7d8c; 
+}
+.container-fluid {
+    margin-bottom: 50px;
+}
+.phones-length {
+    margin: 10px 0;
+}
+/* View: Phone list */
+.phones {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.phones li {
+    clear: both;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.thumb {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+
+.phone-list-item.odd {
+    background: #f2f2f2;
+}
+.input-query {
+    margin-bottom: 10px;
+}
