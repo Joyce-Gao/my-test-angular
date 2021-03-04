@@ -16,7 +16,7 @@ export class TestComponent implements OnInit {
   ngOnInit() {
   }
   ngAfterViewInit() {
-    console.dir(this.greetDiv);
+    // console.dir(this.greetDiv);
   }
 
 }
