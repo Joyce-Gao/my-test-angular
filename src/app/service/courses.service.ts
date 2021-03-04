@@ -27,7 +27,10 @@ export class CoursesService {
 
 constructor(private http: HttpClient) { }
 getCourseList(){
-  return this.http.get<{data:Course[]}>(environment.baseUrl + 'api/courses');
+  //use mock API
+  // return this.http.get<{data:Course[]}>('/mock/courses');
+  //use online API
+  return this.http.get<{data:Course[]}>('/api/courses')
 }
 
 }

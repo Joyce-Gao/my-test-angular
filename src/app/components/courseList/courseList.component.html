@@ -1,8 +1,8 @@
 <ng-container>
   <h4>{{title}}</h4>
   <ul>
-    <li *ngFor="let course of courses" class="col-md-6 col-sm-6">
-      <div class="card card-course card-strong" >
+    <li *ngFor="let course of courses" class="col-md-6 col-sm-6" #list>
+      <div class="card card-course card-strong" (click)="handleCourseItem(course)">
         <div class="card-header">
           <div class="card-course-title-wrapper">
             <div class="card-course-title-text">{{course?.description}}</div>

@@ -66,10 +66,10 @@ phones: Phones[] = [];
 constructor(private http: HttpClient) { }
 
 getPhones() {
-return this.http.get<Phones[]>(environment.baseUrl + 'phones');
+return this.http.get<Phones[]>('/mock/phones');
 }
 getHero(phoneId: string) {
-  return this.http.get<PhoneType>(environment.baseUrl + phoneId);
+  return this.http.get<PhoneType>('/mock/' + phoneId);
 }
 
 }

@@ -8,6 +8,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    margin-bottom: 40px;
     li {
         margin: 10px 0;
     }
@@ -116,7 +117,7 @@ ul{
     box-sizing: border-box
 }
 
-.course-card-body .course-description {
+.course-description {
     padding: 0 12px;
     text-align: left;
     margin-top: 0

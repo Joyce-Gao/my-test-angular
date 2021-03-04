@@ -1,0 +1,12 @@
+{
+    "/api": {
+        "target": "https://angular-university.io",
+        "secure": false,
+        "changeOrigin": true
+    },
+    "/mock": {
+        "target": "http://127.0.0.1:4523/mock/371993",
+        "secure": false,
+        "changeOrigin": true
+    }     
+}
