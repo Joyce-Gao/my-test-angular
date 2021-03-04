@@ -7,12 +7,14 @@
         <div class="row">
           <div class="col-md-6">
             <label class="input-query">
-              Search: <input [ngModel]="query" (keyup)="onQuery($event)" />
+              <!-- <input [ngModel]="query" (keyup)="onQuery($event)" /> -->
+              Search: <input [(ngModel)]="query" />
             </label>
           </div>
           <div class="col-md-6">
             Sort by:
-            <select [ngModel]='orderProp' #order (change)="onChange(order.value)">
+            <!-- <select [ngModel]='orderProp' #order (change)="onChange(order.value)"> -->
+            <select [(ngModel)]='orderProp'>
               <option value="name">Alphabetical</option>
               <option value="age">Newest</option>
             </select>
@@ -20,10 +22,12 @@
         </div>
         <div class="phones-length">number of phones: {{(phones |filter: query |orderby:orderProp)?.length}}</div>
         <ul class="phones">
-          <li *ngFor="let phone of (phones |filter: query |orderby:orderProp);let odd=odd; " [class.odd]="odd"  class="thumbnail phone-list-item">
-            <a href="/phones/{{phone.id}}" class="thumb"><img src={{phone.imageUrl}} alt={{phone.name}}/></a>
-            <a href="/phones/{{phone.id}}"><h6>{{phone.name}}</h6></a>
-            <p>{{phone.snippet}}</p>
+          <li *ngFor="let phone of (phones |filter: query |orderby:orderProp);let odd=odd; "  class="thumbnail phone-list-item col-md-4 col-sm-6">
+              <div class="phone-box" [class.odd]="odd">
+                <a href="/phones/{{phone.id}}" class="thumb"><img src={{phone.imageUrl}} alt={{phone.name}}/></a>
+                <a href="/phones/{{phone.id}}"><h6>{{phone.name}}</h6></a>
+                <p>{{phone.snippet}}</p>
+              </div>
           </li>
         </ul>
     </div>
