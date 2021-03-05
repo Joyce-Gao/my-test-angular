@@ -1,0 +1,10 @@
+<div class="course-item-wrap" #courseItem>
+  <span *ngIf="isShow" class="course-tip">clicked</span>
+  <input type='checkbox' class="course-checkbox" />
+  <div class="course-icon"><img [src]="item?.courseListIcon"></div>
+  <div class="course-description" (click)="clickCourseItem()">{{item?.description}}</div>
+  <div class="parking">
+    <span *ngIf="item.pro">p</span>
+  </div>
+  <div class="course-time">{{item?.duration}}</div>
+</div>

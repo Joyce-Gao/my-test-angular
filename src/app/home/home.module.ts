@@ -6,12 +6,14 @@ import { GreetingComponent } from '../greeting/greeting.component';
 import { SharedModule } from '../shared/shared/shared.module';
 import { HomeComponent } from './home.component';
 import { CourseDetailComponent } from '../components/courseDetail/courseDetail.component';
+import { CourseItemComponent } from '../components/courseItem/courseItem.component';
+import { ChildComponent } from '../components/child/child.component';
 
 @NgModule({
   imports: [
     SharedModule
   ],
-  declarations: [HomeComponent, CarouselComponent, GreetingComponent, TestComponent, CourseListComponent, CourseDetailComponent],
+  declarations: [HomeComponent, CarouselComponent, GreetingComponent, TestComponent, CourseListComponent, CourseDetailComponent, CourseItemComponent, ChildComponent],
   exports: [HomeComponent]
 })
 export class HomeModule { }

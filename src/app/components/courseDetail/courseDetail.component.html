@@ -1,5 +1,5 @@
 <div class="col-md-12">
-  <div class="card card-strong hoverable">
+  <div class="card card-strong hoverable" #test>
     <div class="card-header">{{courseDetail?.summary?.description}}</div>
     <div class="card-body">
       <div class="course-description">
@@ -8,10 +8,14 @@
         <h3>lesson list</h3>
         <ul>
           <li *ngFor="let course of courseDetail?.lessons">
-            {{course?.description}}
-        </li>
+            <app-courseItem [item] = "course" ></app-courseItem>
+          </li>
         </ul>
       </div>
     </div>
   </div>
 </div>
+
+
+<button (click)="testClick()" >test</button>
+<p style="height: 40px;"></p>

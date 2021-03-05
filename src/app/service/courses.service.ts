@@ -50,7 +50,19 @@ export interface CourseDetail {
     visibleFrom: string,
     }
 }
-
+export interface CourseItem {
+  courseDescription: string,
+  courseId: number,
+  courseListIcon: string,
+  description: string,
+  duration: string,
+  iconUrl: string,
+  id: number,
+  pro: boolean,
+  seqNo: number,
+  url: string,
+  viewed: boolean
+  }
 @Injectable({
   providedIn: 'root'
 })

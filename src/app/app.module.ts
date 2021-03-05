@@ -9,7 +9,7 @@ import { NotFoundModule } from './notFound/notFound.module';
 import { HeroesModule } from './heroes/heroes.module';
 import { PhonesModule } from './phones/phones.module';
 import { HttpClientModule } from '@angular/common/http';
-import { HomeModule } from './home/Home.module';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [

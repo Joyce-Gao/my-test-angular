@@ -44,7 +44,7 @@
 .course .course-id-1 .course-logo-background,.course .course-id-9 .course-logo-background {
     box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
     border-radius: 4px;
-    margin-bottom: -1px
+    margin-bottom: -1px;
 }
 
 .course-logo-background {
@@ -53,6 +53,7 @@
     margin: 0 auto;
     text-align: center;
     border-radius: 4px;
+    max-width: 100%;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12)
 }
 

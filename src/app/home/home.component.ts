@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   
   ngAfterViewInit(): void {
       // console.log(this.appTest, 'aaaa')
-      console.log(this.courseList);
+      // console.log(this.courseList);
   } 
   courseItemClick(course:Course) {
     // const isContinue: boolean = confirm(`You clicked ${course.description}, Do you want to continue?`);
