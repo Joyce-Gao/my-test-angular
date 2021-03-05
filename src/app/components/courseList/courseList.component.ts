@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output, QueryList, ViewChildren } from '@angular/core';
+import { Route } from '@angular/router';
 import { CoursesService, Course } from 'src/app/service/courses.service';
 
 @Component({
@@ -25,6 +26,6 @@ export class CourseListComponent implements OnInit {
     console.log(this.list)
   }
   handleCourseItem(course: Course) {
-   this.myEvent.emit(course);
+    this.myEvent.emit(course);
   }
 }

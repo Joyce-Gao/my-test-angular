@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
       console.log(this.courseList);
   } 
   courseItemClick(course:Course) {
-    const isContinue: boolean = confirm(`You clicked ${course.description}, Do you want to continue?`);
+    // const isContinue: boolean = confirm(`You clicked ${course.description}, Do you want to continue?`);
     // if(isContinue) {
     //   alert('sure to continue')
     // }else {

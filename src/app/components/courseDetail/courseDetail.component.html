@@ -1,0 +1,17 @@
+<div class="col-md-12">
+  <div class="card card-strong hoverable">
+    <div class="card-header">{{courseDetail?.summary?.description}}</div>
+    <div class="card-body">
+      <div class="course-description">
+        <div class="course-logo-container"><img class="course-logo-background" [src]='courseDetail?.summary?.iconUrl'>
+        </div>
+        <h3>lesson list</h3>
+        <ul>
+          <li *ngFor="let course of courseDetail?.lessons">
+            {{course?.description}}
+        </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -5,7 +5,7 @@
       <div class="card card-course card-strong" (click)="handleCourseItem(course)">
         <div class="card-header">
           <div class="card-course-title-wrapper">
-            <div class="card-course-title-text">{{course?.description}}</div>
+            <a href="/course/{{course.url}}" class="card-course-title-text">{{course?.description}}</a>
           </div>
         </div>
         <div class="course-card-body">
