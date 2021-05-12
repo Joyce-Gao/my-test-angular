@@ -14,4 +14,3 @@ import { CheckmarkPipe } from '../core/checkmark.pipe';
   exports: [PhonesComponent]
 })
 export class PhonesModule { }
-0
