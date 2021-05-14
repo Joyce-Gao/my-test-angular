@@ -16,10 +16,10 @@ export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
   constructor(private route: Router, private service: HeroesService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
    this.heroes = this.service.getHeroes().slice(1, 5);
   }
-  handleClick(index: number) {
+  handleClick(index: number): void {
     this.route.navigate([`/detail/${index}`]);
   }
 

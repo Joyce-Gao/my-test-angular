@@ -9,7 +9,7 @@ export class GreetingComponent implements OnInit {
   @Input() name!: string;
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

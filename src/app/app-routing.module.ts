@@ -4,13 +4,14 @@ import { CourseDetailComponent } from './components/courseDetail/courseDetail.co
 import { DetailComponent } from './components/detail/detail.component';
 import { PhoneDetailComponent } from './components/phone-detail/phone-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DemoAppComponent } from './demo-app/demo-app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './notFound/notFound.component';
 import { PhonesComponent } from './phones/phones.component';
 
 const routes: Routes = [
-  {path :'', redirectTo: 'home', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'heroes', component: HeroesComponent},
   {path: 'dashboard', component: DashboardComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'phones', component: PhonesComponent},
   {path: 'phones/:phoneId', component: PhoneDetailComponent},
   {path: 'course/:courseUrl', component: CourseDetailComponent},
+  {path: 'demo-app', component: DemoAppComponent},
   {path: '**', component: NotFoundComponent}
 ];
 

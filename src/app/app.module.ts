@@ -10,12 +10,13 @@ import { HeroesModule } from './heroes/heroes.module';
 import { PhonesModule } from './phones/phones.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeModule } from './home/home.module';
+import { DemoAppModule } from './demo-app/demo-app.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent
-  ],
+    FooterComponent,
+   ],
   imports: [
     HttpClientModule,
     BrowserModule,
@@ -24,7 +25,8 @@ import { HomeModule } from './home/home.module';
     DashboardModule,
     HeroesModule,
     PhonesModule,
-    NotFoundModule
+    NotFoundModule,
+    DemoAppModule
   ],
   providers: [],
   bootstrap: [AppComponent]

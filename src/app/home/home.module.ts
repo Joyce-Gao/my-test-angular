@@ -13,7 +13,15 @@ import { ChildComponent } from '../components/child/child.component';
   imports: [
     SharedModule
   ],
-  declarations: [HomeComponent, CarouselComponent, GreetingComponent, TestComponent, CourseListComponent, CourseDetailComponent, CourseItemComponent, ChildComponent],
+  declarations: [
+    HomeComponent,
+    CarouselComponent,
+    GreetingComponent,
+    TestComponent,
+    CourseListComponent,
+    CourseDetailComponent,
+    CourseItemComponent,
+    ChildComponent],
   exports: [HomeComponent]
 })
 export class HomeModule { }

@@ -25,11 +25,17 @@ footerList: footerList[] = [
     id: 3,
     link : '/phones',
     label: 'Phones'
+  },
+  {
+    id: 4,
+    link : '/demo-app',
+    label: 'Demo App'
   }
-]
+];
 constructor() { }
 
-getFooterList () {
+
+getFooterList(): footerList[] {
   return this.footerList;
 }
 
