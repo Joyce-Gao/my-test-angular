@@ -11,17 +11,42 @@ import { NotFoundComponent } from './notFound/notFound.component';
 import { PhonesComponent } from './phones/phones.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'heroes', component: HeroesComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'detail', component: DashboardComponent},
-  {path: 'detail/:id', component: DetailComponent},
-  {path: 'phones', component: PhonesComponent},
-  {path: 'phones/:phoneId', component: PhoneDetailComponent},
-  {path: 'course/:courseUrl', component: CourseDetailComponent},
-  {path: 'demo-app', component: DemoAppComponent},
-  {path: '**', component: NotFoundComponent}
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  {
+    path: 'home',
+    // component: HomeComponent
+    loadChildren: () =>
+      import('./home/home.module').then((home) => home.HomeModule),
+  },
+  {
+    path: 'heroes',
+    // component: HeroesComponent
+    loadChildren: () =>
+      import('./heroes/heroes.module').then((heroes) => heroes.HeroesModule),
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    // loadChildren: () => import('./dashboard/dashboard.module').then(dashboard => dashboard.DashboardModule)
+  },
+  {
+    path: 'detail',
+    component: DashboardComponent
+  },
+  {
+    path: 'detail/:id',
+    component: DetailComponent
+  },
+  {
+    path: 'phones',
+    // component: PhonesComponent
+    loadChildren: () =>
+      import('./phones/phones.module').then((phones) => phones.PhonesModule),
+  },
+  { path: 'phones/:phoneId', component: PhoneDetailComponent },
+  { path: 'course/:courseUrl', component: CourseDetailComponent },
+  { path: 'demo-app', component: DemoAppComponent },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

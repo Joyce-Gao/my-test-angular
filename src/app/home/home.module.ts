@@ -8,10 +8,12 @@ import { HomeComponent } from './home.component';
 import { CourseDetailComponent } from '../components/courseDetail/courseDetail.component';
 import { CourseItemComponent } from '../components/courseItem/courseItem.component';
 import { ChildComponent } from '../components/child/child.component';
+import { HomeRouteRoutes } from './home-route.module';
 
 @NgModule({
   imports: [
-    SharedModule
+    SharedModule,
+    HomeRouteRoutes,
   ],
   declarations: [
     HomeComponent,

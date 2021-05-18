@@ -7,10 +7,10 @@ import { PhonesService, Phones } from '../service/phones.service'
   styleUrls: ['./phones.component.scss']
 })
 export class PhonesComponent implements OnInit {
-  title: string = 'Phones List'
+  title = 'Phones List';
   phones!: Phones[];
-  orderProp: string = 'age';
-  query:string ='';
+  orderProp = 'age';
+  query = '';
   constructor(private service: PhonesService) {
     this.service.getPhones().subscribe(data => {
       this.phones = data;
